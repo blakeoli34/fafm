@@ -1,0 +1,266 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+	font-family:"Avenir Next, Avenir, Helvetica, Arial, sans-serif";
+}
+body {
+	padding:0;
+	margin:0 auto;
+	margin-top:50px;
+	width:100%;
+}
+.page {
+	width:100%;
+	margin-left:20%;
+}
+[class*="col-"] {
+    float: left;
+    padding-right: 10px;
+	margin-bottom:10px;
+}
+
+.row [class*="col-"]:last-child {
+	padding-right:0px;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+.navigation {
+	font-family:'Avenir Next Condensed';
+	padding-left:0;
+	position:fixed;
+}
+
+.navigation a {
+	text-decoration:none;
+	color:#fff;
+}
+ul.nav {
+	-webkit-margin-before:0px;
+	-webkit-padding-start:0px;
+	z-index:2;
+}
+.nav li {
+	list-style-type:none;
+	padding-left:20px;
+	margin-top:12.5px;
+}
+.nav li.nopadding {
+	padding-left:0px;
+}
+.nav li a {
+	opacity:1;
+	font-size:16px;
+	font-weight:600;
+	text-transform:uppercase;
+	transition:all 0.3s;
+}
+.nav li a:hover {
+	color:#555;
+	transition:all 0.3s;
+}
+.dim {
+	opacity:.5;
+	}
+.dim a:hover {
+	opacity:1;
+}
+.nav_top {
+	background:#7f9e1c;
+	color:#fff;
+}
+.navbar {
+	background:#9bba3b;
+	padding-top:5px;
+	padding-bottom:0px;
+	z-index:0;
+	transition:height 0.3s;
+}
+.navbar:after {
+	background:inherit;
+	content:'';
+	display:block;
+    height: 250px;
+	width:100%;
+    position: relative;
+	margin-top:-260px;
+    z-index: -2;
+    -webkit-backface-visibility: hidden;
+	transition:top 0.4s;
+	  -webkit-transform: skewY(-23.1deg);
+	          transform: skewY(-23.1deg);
+	  -webkit-transform-origin: 100%;
+	          transform-origin: 100%;
+}
+.long.navbar:after {
+	top:450px;
+	transition:top 0.4s;
+}
+h2.identity{
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:14px;
+	padding:10px 0px 10px 20px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 10px;
+}
+.light {
+	font-weight:400;
+	opacity:.75;
+}
+.placey {
+	width:100%;
+	height:300px;
+	background:#bbb;
+}
+.placey_small {
+	width:100%;
+	height:145px;
+	background:#bbb;
+}
+.placey_small:first-child {
+	margin-bottom:10px;
+}
+.orange {
+	background:#F78D38;
+}
+.blue {
+	background:#19A0C7;
+}
+.purple {
+	background:#8D1A50;
+}
+.ferrisbar {
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	background:rgba(255,255,255,0.85);
+	padding-top:12px;
+}
+img.ferrismark {
+	max-width:90%;
+	vertical-align:middle;
+	margin:0 auto;
+	display:block;
+	transition:all 0.3s;
+}
+.ferrismark:hover {
+	opacity:.5;
+	transition:all 0.3s;
+}
+ul.submenu li a {
+	font-family:"Avenir Next";
+	text-transform:none;
+	display:block;
+	font-size:12px;
+	line-height:13px;
+	z-index:3;
+}
+ul.submenu li:last-child {
+	padding-bottom:10px;
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+	width:20%;
+}
+footer h3, h4, h5, h6 {
+	font-family:"Avenir Next Condensed";
+	text-transform:uppercase;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	padding-left:10px;
+}
+footer h3 {
+	font-weight:900;
+	font-size:18px;
+}
+footer h4 {
+	font-weight:600;
+	font-size:14px;
+	padding-bottom:10px;
+}
+footer h5 {
+	font-weight:400;
+	font-size:12px;
+}
+footer h6 {
+	font-weight:400;
+	font-size:10px;
+	padding-bottom:10px;
+}
+.heavy {
+	font-weight:700;
+}
+.togglethis {
+	opacity:1;
+	transition:all 0.3s;
+}
+.togglethisoff {
+	opacity:0;
+	transition:0.3s;
+}
+@media screen and (max-width: 1050px) {
+[class*="col-"] {
+    float: left;
+    padding-right: 10px;
+	margin-bottom:10px;
+}
+
+.row [class*="col-"]:last-child {
+	padding-right:10px;
+}
+
+.col-1 {width: 15%;}
+.col-2 {width: 30%;}
+.col-3 {width: 45%;}
+.col-4 {width: 60%;}
+.col-5 {width: 75%;}
+.col-6 {width: 90%;}
+.col-7 {width: 90%;}
+.col-8 {width: 100%;}
+.col-9 {width: 100%;}
+.col-10 {width: 100%;}
+}
+
+ul.nav > li > a {
+	/* uppercase, condensed */
+}
+
+ul.nav li ul {
+	-webkit-margin-before:0px;
+	-webkit-padding-start:0px;
+	max-height:0;
+	margin-left:-20px;
+	overflow:hidden;
+	background:#AFC762;
+	opacity:0;
+	transition:all 0.35s;
+}
+
+ul.nav li.active ul {
+	max-height:200px;
+	opacity:1;
+	transition:all 0.5s;
+}
+
+ul.nav li ul li a {
+	/* subnav, lighter, not condensed */
+}
