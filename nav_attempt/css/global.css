@@ -22,9 +22,7 @@ body {
 	margin-bottom:10px;
 }
 
-.row [class*="col-"]:last-child {
-	padding-right:0px;
-}
+
 
 .col-1 {width: 10%;}
 .col-2 {width: 20%;}
@@ -37,10 +35,68 @@ body {
 .col-9 {width: 90%;}
 .col-10 {width: 100%;}
 
+.textpadding {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+h1 {
+	font-family:'Avenir Next Condensed';
+	font-size:36px;
+	line-height:38px;
+	font-weight:700;
+	color:#D1D3D4;
+	text-transform:uppercase;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+}
+h2 {
+	font-family:'Avenir Next Condensed';
+	font-size:18px;
+	line-height:24px;
+	font-weight:500;
+	color:#757779;
+	text-transform:uppercase;
+}
+p {
+	font-size:16px;
+	line-height:24px;
+	font-weight:500;
+	color:#757779;
+}
+
+img.responsive {
+	display:block;
+	max-width:100%;
+	margin-bottom:10px;
+}
+img.responsive-half-first {
+	display:inline-block;
+	max-width:48%;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+img.responsive-half {
+	display:inline-block;
+	max-width:48%;
+	margin-bottom:10px;
+}
+.col-2 img.responsive-half-first {
+	display:inline-block;
+	max-width:47%;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+.col-2 img.responsive-half {
+	display:inline-block;
+	max-width:47%;
+	margin-bottom:10px;
+}
 .navigation {
 	font-family:'Avenir Next Condensed';
 	padding-left:0;
 	position:fixed;
+	max-width:270px;
 }
 
 .navigation a {
@@ -55,20 +111,20 @@ ul.nav {
 .nav li {
 	list-style-type:none;
 	padding-left:20px;
-	margin-top:12.5px;
+	margin-top:18px;
 }
 .nav li.nopadding {
 	padding-left:0px;
 }
 .nav li a {
-	opacity:1;
-	font-size:16px;
+	opacity:.5;
+	font-size:18px;
 	font-weight:600;
 	text-transform:uppercase;
 	transition:all 0.3s;
 }
 .nav li a:hover {
-	color:#555;
+	color:#777;
 	transition:all 0.3s;
 }
 .dim {
@@ -111,10 +167,11 @@ ul.nav {
 h2.identity{
 	text-transform:uppercase;
 	font-weight:800;
-	font-size:14px;
+	font-size:18px;
 	padding:10px 0px 10px 20px;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 10px;
+	color:white;
 }
 .light {
 	font-weight:400;
@@ -153,7 +210,8 @@ h2.identity{
 	padding-top:12px;
 }
 img.ferrismark {
-	max-width:90%;
+	width:90%;
+	max-width:250px;
 	vertical-align:middle;
 	margin:0 auto;
 	display:block;
@@ -167,20 +225,21 @@ ul.submenu li a {
 	font-family:"Avenir Next";
 	text-transform:none;
 	display:block;
-	font-size:12px;
-	line-height:13px;
+	font-size:14px;
+	line-height:20px;
 	z-index:3;
 }
 ul.submenu li:last-child {
-	padding-bottom:10px;
+	padding-bottom:20px;
 }
 
 footer {
 	position:fixed;
-	bottom:0;
+	z-index:-5;
+	bottom:20px;
 	width:20%;
 }
-footer h3, h4, h5, h6 {
+footer h3,h4 {
 	font-family:"Avenir Next Condensed";
 	text-transform:uppercase;
 	-webkit-margin-before: 0px;
@@ -190,21 +249,25 @@ footer h3, h4, h5, h6 {
 }
 footer h3 {
 	font-weight:900;
-	font-size:18px;
+	font-size:16px;
+	color:gray;
 }
-footer h4 {
-	font-weight:600;
-	font-size:14px;
-	padding-bottom:10px;
-}
-footer h5 {
+.footerbar h4 {
+	font-family:"Avenir Next";
+	text-transform:none;
 	font-weight:400;
 	font-size:12px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:gray;
+	margin-left:19.25%;
 }
-footer h6 {
-	font-weight:400;
-	font-size:10px;
-	padding-bottom:10px;
+.footerbar {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background:rgba(255,255,255,0.9);
+	text-align:left;
 }
 .heavy {
 	font-weight:700;
@@ -216,6 +279,9 @@ footer h6 {
 .togglethisoff {
 	opacity:0;
 	transition:0.3s;
+}
+#smallcaps {
+	text-transform:none;
 }
 @media screen and (max-width: 1050px) {
 [class*="col-"] {
@@ -254,13 +320,77 @@ ul.nav li ul {
 	opacity:0;
 	transition:all 0.35s;
 }
+body.about li.about a,
+body.work li.work a,
+body.events li.events a,
+body.faculty li.faculty a,
+body.alumni li.alumni a {
+	opacity:1;
+}
+body.home li.about a,
+body.home li.work a,
+body.home li.events a,
+body.home li.faculty a,
+body.home li.alumni a,
+body.home li.arch a,
+body.home li.fman a {
+	opacity:1;
+}
+body.arch li.arch a,
+body.fman li.fman a {
+	opacity:1;
+}
+
+body.arch li ul li a,
+body.fman li ul li a {
+	color:#8ba735;
+}
+
+body.bsas li.bsas a,
+body.aas li.aas a,
+body.dd li.dd a,
+body.sts li.sts a,
+body.bsfm li.bsfm a,
+body.cfm li.cfm a,
+body.mfm li.mfm a {
+	color:#fff;
+}
 
 ul.nav li.active ul {
-	max-height:200px;
+	max-height:220px;
 	opacity:1;
 	transition:all 0.5s;
 }
-
+.textbox {
+	padding:10px;
+	margin-bottom:10px;
+}
+.textbox h2 {
+	color:#fff;
+}
+.textbox p {
+	color:#fff;
+}
+.quote {
+	padding:10px;
+	margin-bottom:10px;
+}
+.quote p {
+	font-family:"Avenir Next Condensed";
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:550;
+}
+input.search {
+	width:100%;
+	outline:none;
+	border:1px solid gray;
+	padding:2px;
+	background:none;
+}
+input.search:focus {
+	border:1px solid #8D1A50;
+}
 ul.nav li ul li a {
 	/* subnav, lighter, not condensed */
 }

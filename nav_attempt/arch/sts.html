@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FAFM Architecture</title>
+	<link rel="stylesheet" href="../css/global.css" type="text/css" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class="arch sts">
+	<div class="ferrisbar">
+		<div class="col-2">
+			<a href="http://ferris.edu/" target="_blank"><img class="ferrismark" src="../images/ferrismark.png" alt="ferris state wordmark" /></a>
+		</div>
+	</div>	
+		<header>
+			<div class="col-2 navigation">
+				<div class="nav_top">
+					<a href="../index.html"><h2 class="identity">Architecture Sustainability<br><span class="light">&amp;</span> Facility Management</h2></a>
+				</div>
+				<div class="navbar">
+					<ul class="nav">
+						<li class="about"><a href="../about/">About</a></li>
+						<li class="work"><a href="../work/">Student Work</a></li>
+						<li class="arch active">
+							<a href="#">Architecture</a>
+							<ul id="archmenu" class="submenu">
+								<li class="aas"><a href="aas.html">Associate in Applied Science in Architectural Technology</a></li>
+								<li class="bsas"><a href="bsas.html">Bachelor of Science in<br>Architecture &amp; Sustainability</a></li>
+								<li class="dd"><a href="dd.html">Dual Degree</a></li>
+								<li class="sts"><a href="sts.html">Small Town Studio</a></li>
+							</ul>
+						</li>		
+						<li class="fman">
+							<a href="#">Facility Management</a>
+							<ul id="fmanmenu" class="submenu">
+								<li class="bsfm"><a href="../fman/bsfm.html">Bachelor of Science in<br>Facility Management</a></li>
+								<li class="mfm"><a href="../fman/mfm.html">Minor in Facility Management</a></li>
+								<li class="cfm"><a href="../fman/cfm.html">Certificate in Facility Management</a></li>
+								<li class="dd"><a href="../fman/dd.html">Dual Degree</a></li>
+							</ul>
+						</li>
+						<li class="events"><a href="../events/">Events</a></li>
+						<li class="faculty"><a href="../faculty/">Faculty</a></li>
+						<li class="alumni"><a href="../alumni/">Alumni</a></li>
+					</ul>	
+				</div>		
+			</div>	
+		</header>
+		<div class="page">
+		<div class="row">
+			<div class="col-1">
+				<div class="placey"></div>
+			</div>
+			<div class="col-2">
+				<div class="placey"></div>
+			</div>
+			<div class="col-3">
+				<div class="placey"></div>
+			</div>
+			<div class="col-2">
+				<div class="placey_small orange"></div>
+				<div class="placey_small"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="placey blue"></div>
+			</div>
+			<div class="col-3">
+				<div class="placey"></div>
+			</div>
+			<div class="col-1">
+				<div class="placey_small"></div>
+				<div class="placey_small"></div>
+			</div>
+			<div class="col-1">
+				<div class="placey_small"></div>
+				<div class="placey_small"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="placey"></div>
+			</div>
+			<div class="col-3">
+				<div class="placey purple"></div>
+			</div>
+			<div class="col-2">
+				<div class="placey"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="placey orange"></div>
+			</div>
+			<div class="col-3">
+				<div class="placey"></div>
+			</div>
+			<div class="col-1">
+				<div class="placey_small"></div>
+				<div class="placey_small"></div>
+			</div>
+			<div class="col-1">
+				<div class="placey_small"></div>
+				<div class="placey_small"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<h3>Contact Diane<br>Program Coordinator<br><span id="smallcaps">atfm@ferris.edu<br>(231)591-3300</span></h3>
+	</footer>
+	<div class="footerbar">
+		<h4>School of Built Environment&nbsp;&nbsp;|&nbsp;&nbsp;College of Engineering&nbsp;&nbsp;|&nbsp;&nbsp;Ferris State University&nbsp;&nbsp;|&nbsp;&nbsp;&copy; 2017</h4>	
+	</div>	
+</body>
+<script>
+$(document).ready(function(){
+    $('ul.nav > li > a[href="#"]').on("click",function() {
+		$("ul.nav > li").removeClass("active");
+		$(this).parent().addClass("active");
+    	return false;
+    });
+});
+</script>
+</html>
